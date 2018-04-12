@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/heybro_background_white"
+    tools:context="com.heybro.pnuite.DetailInputActivity">
+
+    <ImageView
+        android:id="@+id/detailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/detail_detail_button" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="4dp"
+                    android:text="정렬"
+                    android:textAppearance="@android:style/TextAppearance.Large" />
+
+                <CheckBox
+                    android:id="@+id/sortDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:paddingLeft="4dp"
+                    android:text="거리순"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/sortCheap"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:paddingLeft="4dp"
+                    android:text="낮은 가격순"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/sortExpensive"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:paddingLeft="4dp"
+                    android:text="높은 가격순"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="4dp"
+                    android:text="  필수 시설"
+                    android:textAppearance="@android:style/TextAppearance.Large" />
+
+                <CheckBox
+                    android:id="@+id/facilityParking"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:paddingLeft="4dp"
+                    android:text="주차장"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/facilityShower"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:paddingLeft="4dp"
+                    android:text="샤워실"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="4dp"
+                    android:text="  거리 범위"
+                    android:textAppearance="@android:style/TextAppearance.Large" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <RadioButton
+                        android:id="@+id/radio5km"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                        android:layout_weight="1"
+                        android:text="5km" />
+
+                    <RadioButton
+                        android:id="@+id/radio10km"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                        android:text="10km" />
+
+                    <RadioButton
+                        android:id="@+id/radio20km"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                        android:layout_weight="1"
+                        android:text="20km" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_myinfo_icon" />
+
+    <ImageButton
+        android:id="@+id/surroundButton"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/infoButton"
+        app:srcCompat="@drawable/home_location_icon" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_home_icon" />
+
+    <ImageButton
+        android:id="@+id/soldierButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/matchingButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:srcCompat="@drawable/home_soldier_icon" />
+
+    <ImageButton
+        android:id="@+id/matchingButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/home_matching_icon" />
+</android.support.constraint.ConstraintLayout>

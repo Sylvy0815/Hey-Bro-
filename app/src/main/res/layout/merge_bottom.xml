@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            app:srcCompat="@drawable/home_myinfo_icon" />
+
+        <ImageButton
+            android:id="@+id/surroundButton"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            app:srcCompat="@drawable/home_location_icon" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            app:srcCompat="@drawable/home_home_icon" />
+
+        <ImageButton
+            android:id="@+id/soldierButton"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            app:srcCompat="@drawable/home_soldier_icon" />
+
+        <ImageButton
+            android:id="@+id/matchingButton"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            app:srcCompat="@drawable/home_matching_icon" />
+    </LinearLayout>
+
+</merge>
